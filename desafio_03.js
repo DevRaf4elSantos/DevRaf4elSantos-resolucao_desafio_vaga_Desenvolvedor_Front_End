@@ -1,4 +1,4 @@
-const URL = "https://github.com/DevRaf4elSantos/resolucao_desafio_vaga_Desenvolvedor_Front_End/raw/main/dados.json";
+const URL = "https://github.com/DevRaf4elSantos/DevRaf4elSantos-resolucao_desafio_vaga_Desenvolvedor_Front_End/raw/main/dados.json";
 
 fetch(URL)
     .then(response => response.json())
@@ -22,3 +22,6 @@ fetch(URL)
         console.log(`o maior dia de vendas foi ${diaMaiorValor} com o valor de R$ ${maiorValor.toFixed(2)}`)
         
     })
+    .catch(error => {
+        console.error('Erro ao buscar os dados:', error);
+    });
